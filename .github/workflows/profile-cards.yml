@@ -16,23 +16,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Generate trophies
         uses: soulteary/github-profile-trophy-action@v1.0.0
         with:
           options: "username=Mxtriix&theme=darkhub&no-frame=true&column=4&margin-w=12&margin-h=12"
           path: profile/trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
 
       - name: Generate statistics
         uses: soulteary/github-readme-stats-action@v1
         with:
           card: stats
-          options: "username=Mxtriix&show_icons=true&theme=github_dark&hide_border=true"
+          options: "username=Mxtriix&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true"
           path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
 
       - name: Save images
         run: |
