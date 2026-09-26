@@ -1,1 +1,2 @@
-[![GitHub Trophy](https://vercel.app)](https://github.com/Mxtriix)
+[![Les stats GitHub de Mxtriix](https://vercel.app)](https://github.com/Mxtriix)
+
