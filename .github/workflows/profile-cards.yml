@@ -33,13 +33,6 @@ jobs:
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate languages
-        uses: soulteary/github-readme-stats-action@v1
-        with:
-          card: top-langs
-          options: "username=Mxtriix&layout=compact&langs_count=6&theme=github_dark"
-          path: profile/top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Save images
         run: |
